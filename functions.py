@@ -6,6 +6,14 @@ import shutil
 
 font = "Georgia"
 
+def resource_path(relative_path):
+    if getattr(sys, 'frozen', False):  # Running as a bundled executable
+        base_path = sys._MEIPASS  # Temporary folder where PyInstaller unpacks files
+    else:
+        base_path = os.path.abspath(".")  # Running as a script
+
+    return os.path.join(base_path, relative_path)
+
 FrameMenu_visible = False
 def toggleMenu(FrameMenu):
     global FrameMenu_visible
@@ -198,4 +206,3 @@ def getStatistics():
 
 def quitGame(window):
     window.destroy()
-
