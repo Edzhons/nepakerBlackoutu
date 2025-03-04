@@ -10,28 +10,29 @@ font = "Georgia"
 
 window = Tk()
 window.attributes("-fullscreen", True)
+
 window.configure(background=bg_color)
 
 dice_images = [
-    PhotoImage(file="images/dice1.png").subsample(2, 2),
-    PhotoImage(file="images/dice2.png").subsample(2, 2),
-    PhotoImage(file="images/dice3.png").subsample(2, 2),
-    PhotoImage(file="images/dice4.png").subsample(2, 2),
-    PhotoImage(file="images/dice5.png").subsample(2, 2),
-    PhotoImage(file="images/dice6.png").subsample(2, 2),
+    PhotoImage(file=resource_path("images/dice1.png")).subsample(2, 2),
+    PhotoImage(file=resource_path("images/dice2.png")).subsample(2, 2),
+    PhotoImage(file=resource_path("images/dice3.png")).subsample(2, 2),
+    PhotoImage(file=resource_path("images/dice4.png")).subsample(2, 2),
+    PhotoImage(file=resource_path("images/dice5.png")).subsample(2, 2),
+    PhotoImage(file=resource_path("images/dice6.png")).subsample(2, 2),
 ]
 
 shot_images = [
-    PhotoImage(file="images/BtnShot1.png"),
-    PhotoImage(file="images/BtnShot2.png"),
-    PhotoImage(file="images/BtnShot3.png"),
-    PhotoImage(file="images/BtnShot4_7.png"),
-    PhotoImage(file="images/BtnShot5.png"),
-    PhotoImage(file="images/BtnShot6.png"),
-    PhotoImage(file="images/BtnShot4_7.png"),
-    PhotoImage(file="images/BtnShot8.png"),
-    PhotoImage(file="images/BtnShot9.png"),
-    PhotoImage(file="images/BtnShot10.png"),
+    PhotoImage(file=resource_path("images/BtnShot1.png")),
+    PhotoImage(file=resource_path("images/BtnShot2.png")),
+    PhotoImage(file=resource_path("images/BtnShot3.png")),
+    PhotoImage(file=resource_path("images/BtnShot4_7.png")),
+    PhotoImage(file=resource_path("images/BtnShot5.png")),
+    PhotoImage(file=resource_path("images/BtnShot6.png")),
+    PhotoImage(file=resource_path("images/BtnShot4_7.png")),
+    PhotoImage(file=resource_path("images/BtnShot8.png")),
+    PhotoImage(file=resource_path("images/BtnShot9.png")),
+    PhotoImage(file=resource_path("images/BtnShot10.png")),
 ]
 
 shot_names = [
@@ -47,7 +48,7 @@ shot_names = [
     "\nNāves ļuļļa",
 ]
 
-cardBack = PhotoImage(file="images/card.png")
+cardBack = PhotoImage(file=resource_path("images/card.png"))
 
 dice_labels = [
     Label(window, image=dice_images[0]),
@@ -58,29 +59,29 @@ dice_labels = [
     Label(window, image=dice_images[5]),
 ]
 
-text_files = ["challenges/lvl1.txt",
-              "challenges/lvl2.txt",
-              "challenges/lvl3.txt",
-              "challenges/lvl4.txt", 
-              "challenges/lvl5.txt",
-              "challenges/lvl6.txt"]
+text_files = [resource_path("challenges/lvl1.txt"),
+              resource_path("challenges/lvl2.txt"),
+              resource_path("challenges/lvl3.txt"),
+              resource_path("challenges/lvl4.txt"), 
+              resource_path("challenges/lvl5.txt"),
+              resource_path("challenges/lvl6.txt")]
 
-text_filesTemp = [shutil.copy("challenges/lvl1.txt", "challenges/lvl1Temp.txt"),
-              shutil.copy("challenges/lvl2.txt", "challenges/lvl2Temp.txt"),
-              shutil.copy("challenges/lvl3.txt", "challenges/lvl3Temp.txt"),
-              shutil.copy("challenges/lvl4.txt", "challenges/lvl4Temp.txt"),
-              shutil.copy("challenges/lvl5.txt", "challenges/lvl5Temp.txt"),
-              shutil.copy("challenges/lvl6.txt", "challenges/lvl6Temp.txt")]
+text_filesTemp = [shutil.copy(text_files[0], resource_path("challenges/lvl1Temp.txt")),
+              shutil.copy(text_files[1], resource_path("challenges/lvl2Temp.txt")),
+              shutil.copy(text_files[2], resource_path("challenges/lvl3Temp.txt")),
+              shutil.copy(text_files[3], resource_path("challenges/lvl4Temp.txt")),
+              shutil.copy(text_files[4], resource_path("challenges/lvl5Temp.txt")),
+              shutil.copy(text_files[5], resource_path("challenges/lvl6Temp.txt"))]
 
-Img_BtnMenu = PhotoImage(file="images/BtnMenu.png").subsample(5, 5)
-Img_BtnAccept = PhotoImage(file="images/BtnAccept.png")
-Img_BtnDrink = PhotoImage(file="images/BtnDrink.png")
-Img_BtnRoll = PhotoImage(file="images/BtnRoll.png")
-Img_Card = PhotoImage(file="images/card.png")
-Img_Menu = PhotoImage(file="images/menu.png")
-Img_ChallengeBg = PhotoImage(file="images/ChallengeBg.png")
-Img_UsedCards = PhotoImage(file="images/UsedCards.png")
-Img_shotEmpty = PhotoImage(file="images/shotEmpty.png").subsample(3, 3)
+Img_BtnMenu = PhotoImage(file=resource_path("images/BtnMenu.png")).subsample(5, 5)
+Img_BtnAccept = PhotoImage(file=resource_path("images/BtnAccept.png"))
+Img_BtnDrink = PhotoImage(file=resource_path("images/BtnDrink.png"))
+Img_BtnRoll = PhotoImage(file=resource_path("images/BtnRoll.png"))
+Img_Card = PhotoImage(file=resource_path("images/card.png"))
+Img_Menu = PhotoImage(file=resource_path("images/menu.png"))
+Img_ChallengeBg = PhotoImage(file=resource_path("images/ChallengeBg.png"))
+Img_UsedCards = PhotoImage(file=resource_path("images/UsedCards.png"))
+Img_shotEmpty = PhotoImage(file=resource_path("images/shotEmpty.png")).subsample(3, 3)
 
 FrameMenu = Frame(window, bg="#FFC7C2", width=315, height=500, highlightbackground="black", highlightthickness=1)
 
@@ -102,6 +103,7 @@ BtnQuit.place(relx=0.5, rely=0.8, anchor=CENTER, relwidth=0.9)
 BtnMenu = Button(window, image=Img_BtnMenu,
                  command=lambda: toggleMenu(FrameMenu),
                  bg=bg_color, relief=FLAT, bd=0).place(relx=0.01,rely=0.01)
+
 
 shot_buttons = []
 relx, rely = 0.27, 0.18
