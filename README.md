@@ -2,7 +2,7 @@ Nepaķer Blackoutu
 
 Par Spēli
 
-Nepāker Blackout ir jautra un izaicinoša dzeršanas galda spēle, kas apvieno kauliņu mešanu, izaicinājumus un respekta sistēmu. Spēlētāji met kauliņus, pilda izaicinājumus un uzlabo vai zaudē savu reputāciju atkarībā no pieņemtajiem lēmumiem.
+Nepaķer Blackoutu ir jautra un izaicinoša dzeršanas galda spēle, kas apvieno kauliņu mešanu, izaicinājumus un respekta sistēmu. Spēlētāji met kauliņus, pilda izaicinājumus un uzlabo vai zaudē savu reputāciju atkarībā no pieņemtajiem lēmumiem.
 
 Prasības
 
