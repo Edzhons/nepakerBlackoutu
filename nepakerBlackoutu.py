@@ -311,7 +311,7 @@ rules = """
 6 kāršu kavas atspoguļo 6 grūtības līmeņus jautājumiem.
 Respektīvi, jautājumi no 1. kavas ir vieglāki, nekā jautājumi no 6. kavas.
 
-Lai sāktu spēli, spied pogu "Mest". Tad tev ir izvēle - atbildēt uz jautājumu ("Apstiprināt") vai arī izvēlēties uz jautājumu neatbildēt ("Iedzert").
+Lai sāktu spēli, spied pogu "Mest". Tad tev ir izvēle - atbildēt uz jautājumu ("Atbildēt") vai arī izvēlēties uz jautājumu neatbildēt ("Iedzert").
 
 Katru reizi, kad atbildi uz uzdoto jautājumu, tavs respekta līmenis palielinās par 10%.
 Kad esi sasniedzis 100% respekta līmeni, esi spēli uzvarējis.
