@@ -192,10 +192,14 @@ def gameOver(type):
 
 def resetGame():
     try:
-        subprocess.Popen([sys.executable] + sys.argv)
+        # Megina palaist velreiz so pasu aplikaciju
+        subprocess.Popen(
+            [sys.executable] + sys.argv,
+            creationflags=subprocess.CREATE_NO_WINDOW # Atver, bez CMD
+        )
     except Exception as e:
         print(f"Failed to restart: {e}")
-    sys.exit()
+    sys.exit() # Aizver pasreizejo aplikaciju
 
 def getStatistics():
     global GAME_OVER
