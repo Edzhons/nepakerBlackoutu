@@ -1,49 +1,77 @@
-Nepaķer Blackoutu
+# 🎲 Nepaķer Blackoutu
 
-Par Spēli
+**Autori:**  
+- Nensija Betija Aukmane – Vizuālais noformējums (Figma)  
+- Edžus Krūmiņš – Dizaina implementācija, spēles loģikas izstrāde
 
-Nepaķer Blackoutu ir jautra un izaicinoša dzeršanas galda spēle, kas apvieno kauliņu mešanu, izaicinājumus un respekta sistēmu. Spēlētāji met kauliņus, pilda izaicinājumus un uzlabo vai zaudē savu reputāciju atkarībā no pieņemtajiem lēmumiem.
+---
 
-Prasības
+## 🧠 Par projektu
 
-Operētājsistēma: Windows
+Šī ir Python valodā izstrādāta interaktīva dzeršanas spēle, kas izmanto `tkinter` grafisko interfeisu un ļauj spēlētājiem:
 
-Python versija: 3.x
+- Mest metamo kauliņu
+- Saņemt izaicinājumus (no 6 grūtības līmeņiem)
+- Pieņemt izaicinājumu vai iedzert šotu
+- Sekot līdzi savam **repekta līmenim** un **dzēruma procentam**
+- Sasniegt **uzvaru**, sasniedzot 100% respektu, vai **zaudēt**, piedzeroties līdz blackoutam
 
-Bibliotēkas: Tkinter, random, os, sys, shutil
+Spēle tiek atskaņota pilnekrāna režīmā un tai ir vairākas interaktīvas izvēlnes, tostarp:
 
-Attēli un teksta faili: Atrodami "images" un "challenges" mapēs
+- **Noteikumi**
+- **Jauna spēle**
+- **Autori**
+- **Iziet**
 
-Instalēšana
+---
 
-Lejupielādē vai klonē repozitoriju.
+## 📦 Funkcijas
 
-Pārliecinies, ka tev ir instalēts Python 3.
+- 🎲 Metamo kauliņu loģika
+- 🧾 Izaicinājumi, kas lasāmi no ārējiem `.txt` failiem
+- 🍻 Šotu izvēle un dzeršana
+- 📊 Statistikas joslas: piedzēršanās un respekta mērītājs
+- 💀 Spēles beigas (uzvara vai zaudējums)
+- 📑 Statistika par katru spēli
+- 🔁 Iespēja sākt spēli no jauna
 
-Nodrošini, ka visi nepieciešamie attēli un teksta faili ir attiecīgajās mapēs.
+---
 
-Palaid main.py failu.
+## 🖥️ Tehnoloģijas
 
-Spēles Gaita
+- Python 3
+- Tkinter GUI
+- `ttk` dizaina komponentes
+- Attēlu apstrāde ar `PhotoImage`
+- Ievades/izvades operācijas ar `os`, `shutil`, `ctypes`, `subprocess`
 
-Spēlētājs met kauliņu.
+---
 
-Atkarībā no uzmestā cipara tiek piešķirts izaicinājums.
+## 📂 Failsistēmas struktūra
 
-Spēlētājs var pieņemt izaicinājumu vai iedzert.
+- **`images/`**: Šajā mapē ir visi spēles attēli, piemēram, logotipi, ikonas un fona attēli.
+- **`challenges/`**: Šeit ir tekstu faili, kuros tiek definēti izaicinājumi ar dažādiem grūtības līmeņiem.
+- **`nepakerBlackoutu.py`**: Galvenais spēles fails, kurš satur visu spēles loģiku un vizuālo noformējumu.
+- **`README.md`**: Šis dokuments ar spēles aprakstu un instrukcijām.
+- **`nepakerBlackoutu.exe`**: Jau gatavs .exe fails, ko var atvērt un spēlēt spēli.
+---
 
-Respekta un dzēruma līmenis tiek attēlots ar progresu joslām.
+## 🚀 Palaišana
 
-Spēle turpinās, līdz spēlētājs sasniedz "blackout" stāvokli vai beidzas izaicinājumi.
+1. Pārliecinies, ka tev ir Python 3 uzstādīts.
+2. Instalē nepieciešamos attēlu failus un izaicinājumu tekstus atbilstošās mapēs (`images/`, `challenges/`)
+3. Palaid `nepakerBlackoutu.py`:
 
-Autori
+```bash
+python nepakerBlackoutu.py
+```
+Alternatīvi, vari instalēt nepakerBlackoutu.exe un palaist to.
 
-Nensija Betija Aukmane - Vizuālais noformējums (FIGMA)
+---
+## 📜 Licence
 
-Edžus Krūmiņš - Dizaina implementācija, spēles izstrāde
+Šis projekts tiek izplatīts bez konkrētas licences. Tomēr, ja vēlies izmantot, mainīt vai izplatīt šo projektu, tev jānorāda autoru vārdi un jāsaņem atļauja no autora.
 
-Papildus Informācija
+Visas tiesības uz šo projektu pieder autoriem. Projekts tiek piedāvāts bez jebkādas garantijas vai atbildības.
 
-Ja rodas problēmas ar spēli vai trūkst failu, pārbaudi, vai visi nepieciešamie resursi ir mapēs un Python ir pareizi instalēts.
-
-Lai jautra un neaizmirstama spēle!
+---
